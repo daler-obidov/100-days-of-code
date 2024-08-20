@@ -46,5 +46,5 @@ while game_is_on:
             snake.reset()
 
 
-
+#hh
 screen.exitonclick()
