@@ -1,5 +1,5 @@
 __pycache__
-__myvenv__
+__.venv__
 # Ignore Python virtual environments (example for a venv directory)
 venv/
 env/
