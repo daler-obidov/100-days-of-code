@@ -46,6 +46,6 @@ while len(guessed) < 12:
         x, y = state_data.x.item(), state_data.y.item()
         write_state(answer, x, y)
     else:
-        screen.textinput(title="Error", prompt="State not found or already guessed. Try again.")
+        screen.textinput(title="Error", prompt="Region not found or already guessed. Try again.")
 
 
