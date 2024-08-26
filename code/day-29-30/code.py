@@ -39,7 +39,7 @@ def save():
         messagebox.showinfo(title="Oops", message="Please make sure you haven't left any fields empty.")
     else:
         try:
-            with open("/home/daler/code/100-days-of-code/code/day-29/data.json", "r") as data_file:
+            with open("code/day-29-30/data.json", "r") as data_file:
                 try:
                     data = json.load(data_file)
                 except json.JSONDecodeError:
@@ -49,7 +49,7 @@ def save():
 
         data.update(new_data)
 
-        with open("/home/daler/code/100-days-of-code/code/day-29/data.json", "w") as data_file:
+        with open("code/day-29-30/data.json", "w") as data_file:
             json.dump(data, data_file, indent=4)
 
         website_entry.delete(0, END)
@@ -60,7 +60,7 @@ def save():
 def find_password():
     website = website_entry.get()
     try:
-        with open("/home/daler/code/100-days-of-code/code/day-29/data.json") as data_file:
+        with open("code/day-29-30/data.json") as data_file:
             data = json.load(data_file)
     except FileNotFoundError:
         messagebox.showinfo(title="Error", message="No Data File Found.")
@@ -80,7 +80,7 @@ window.title("Password Manager")
 window.config(padx=50, pady=50)
 
 canvas = Canvas(height=200, width=200)
-logo_img = PhotoImage(file="/home/daler/code/100-days-of-code/code/day-29/logo.png")
+logo_img = PhotoImage(file="/home/daler/code/100-days-of-code/code/day-29-30/logo.png")
 canvas.create_image(100, 100, image=logo_img)
 canvas.grid(row=0, column=1)
 
