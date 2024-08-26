@@ -1,23 +1,5 @@
 __pycache__
-__.venv__
-# Ignore Python virtual environments (example for a venv directory)
-venv/
-env/
-ENV/
+.venv/
 
 # Ignore VS Code settings and workspace files
 .vscode/
-.code-workspace
-
-# Ignore system files
-.DS_Store
-Thumbs.db
-
-# Ignore log files
-*.log
-
-# Ignore environment variable files (if applicable)
-.env
-
-# Node.js specific (if using Node.js)
-node_modules/
