@@ -25,15 +25,14 @@ def change_card():
     canvas.itemconfig(card_word, text=current_card['English'], fill='white')
     canvas.itemconfig(card_background, image=card_back_image)
 
-# def learned
 
 window = Tk()
 window.title('Card Game')
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
 canvas = Canvas(width=800, height=526)
-card_back_image = PhotoImage(file='/home/daler/code/100-days-of-code/code/day-31/images/card_back.png')
-card_front = PhotoImage(file="/home/daler/code/100-days-of-code/code/day-31/images/card_front.png")
+card_back_image = PhotoImage(file='code/day-31/images/card_back.png')
+card_front = PhotoImage(file="code/day-31/images/card_front.png")
 card_background = canvas.create_image(400, 263, image=card_front)
 
 canvas.grid(row=0, column=0, columnspan=2)
@@ -41,11 +40,11 @@ canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
 card_title = canvas.create_text(400, 150, text='', font=('Ariel', 40, 'italic'))
 card_word = canvas.create_text(400, 263, text='', font=('Ariel', 60, 'bold'))
 
-image2 = PhotoImage(file='/home/daler/code/100-days-of-code/code/day-31/images/wrong.png')
+image2 = PhotoImage(file='code/day-31/images/wrong.png')
 wrong_button = Button(image=image2, highlightthickness=0, bg=BACKGROUND_COLOR, command=next_card)
 wrong_button.grid(row=1, column=0)
 
-image3 = PhotoImage(file='/home/daler/code/100-days-of-code/code/day-31/images/right.png')
+image3 = PhotoImage(file='code/day-31/images/right.png')
 check_button = Button(image=image3, highlightthickness=0, bg=BACKGROUND_COLOR, command=next_card)
 check_button.grid(row=1, column=1)
 
