@@ -4,6 +4,119 @@
 
 This section highlights the projects and code worked on during the 100 days of coding challenge.
 
+## Day 28: [Pomodoro Timer](code/day-28)
+
+### Description
+On **Day 28**, I built a **Pomodoro Timer** application using **Tkinter** to help users manage their work and break intervals. The Pomodoro technique encourages working in focused intervals, followed by short breaks, enhancing productivity and maintaining focus. This app provides the following features:
+
+### Key Features:
+1. **Timer Functionality**:
+   - The app uses a countdown timer that alternates between work and break sessions. Users can start and reset the timer with buttons.
+
+2. **Work and Break Intervals**:
+   - The app allows users to work for a set time (e.g., 1 minute) and take a short break after each work session. Every 4 work intervals, users get a longer break.
+
+3. **Visual Indicators**:
+   - A visual representation of the timer is displayed on the screen, and the app shows checkmarks after each work session to track progress.
+
+4. **User Interface**:
+   - The app’s interface is created with **Tkinter**, featuring a central timer display and buttons for starting and resetting the timer. The background changes color depending on the current phase (work or break).
+
+### Workflow:
+1. **Start Timer**: Clicking the "Start" button begins the countdown, alternating between work and break intervals.
+2. **Reset Timer**: Clicking the "Reset" button resets the timer to the initial state, allowing users to start over.
+3. **Track Progress**: Checkmarks are displayed after each completed work session, providing a visual progress indicator.
+
+### Outcome:
+- This app helps users manage their time efficiently, promoting productivity and regular breaks. It provides a simple and effective tool for implementing the Pomodoro technique.
+
+
+## Day 30: [Password Manager](code/day-29-30)
+
+### Description
+On **Day 30**, I built a **Password Manager** using **Tkinter** to create a simple graphical interface. This app allows users to store and manage their website credentials (username/email and password). The app provides the following features:
+
+### Key Features:
+1. **Password Generation**:
+   - The app has a password generator that creates strong, random passwords consisting of letters, symbols, and numbers. Users can easily copy the generated password to their clipboard.
+
+2. **Saving Credentials**:
+   - Users can store their website, email/username, and password in a JSON file. If the fields are empty, the app shows a warning message.
+
+3. **Search for Credentials**:
+   - Users can search for a saved website by entering the website's name. If the website is found, the app displays the corresponding email/username and password.
+
+4. **User Interface**:
+   - The app's interface is created with **Tkinter**, which includes entry fields for the website, email, and password, as well as buttons for generating passwords, saving, and searching.
+
+### Workflow:
+1. **Generate Password**: Clicking the "Generate Password" button creates a random password and copies it to the clipboard.
+2. **Save Password**: Enter the website, email, and password, then click "Add" to save the data to a JSON file.
+3. **Search for Password**: Enter a website name and click "Search" to retrieve the credentials from the saved data.
+
+### Outcome:
+- This app provides a convenient way to manage and retrieve passwords securely. It allows for efficient password generation and retrieval for different websites.
+
+
+
+## Day 31: [Flashcard Game with Tkinter](code/day-31)
+
+### Description
+On **Day 31**, I built a **Flashcard Game** using the **Tkinter** library. This game helps users learn Korean words and their English translations by displaying them as flashcards. The user can click buttons to mark whether they have answered correctly or incorrectly, and the game proceeds to the next card.
+
+### Key Features:
+1. **Flashcard Display**:
+   - The app uses Tkinter’s `Canvas` widget to display flashcards. Each card shows a word in either Korean or English and flips after 5 seconds to display the translation.
+
+2. **Data Handling**:
+   - The app loads a CSV file (`words.csv`) containing a list of words in both Korean and English using **Pandas**. The words are then converted into a dictionary for easy access.
+
+3. **Timer for Card Flip**:
+   - After displaying the Korean word, the app automatically flips the card after 5 seconds to show the English translation, giving the user time to recall the word.
+
+4. **User Interaction**:
+   - The user can click on buttons to mark whether they got the answer right or wrong. The game will then show a new flashcard.
+
+### Workflow:
+1. The app loads a CSV file containing Korean and English words.
+2. It displays a random Korean word on the screen.
+3. After 5 seconds, the word flips to show the English translation.
+4. The user clicks "right" or "wrong" to move to the next card.
+
+### Outcome:
+- The app helps users learn vocabulary through interactive flashcards. The integration of a timer and random word selection makes it an effective study tool.
+
+
+
+## Day 32: [Automated Birthday Email System](code/day-32)
+
+### Description
+On **Day 32**, I built an **Automated Birthday Email System** that sends personalized birthday emails. The system checks if today's date matches someone's birthday from a CSV file, selects a random birthday message template, personalizes it, and sends the email.
+
+### Key Features:
+1. **Birthday Data Loading**:
+   - The system loads birthday data from a CSV file (`birthdays.csv`), containing names, birthdays, and emails.
+   - The data is converted into a dictionary where the key is a tuple of the month and day, and the value is the person's details (name, email).
+
+2. **Check for Today's Birthday**:
+   - The system checks if today's date matches any of the birthdays in the loaded dictionary.
+
+3. **Personalized Letter Selection**:
+   - If it's someone's birthday, a random birthday letter (from 3 available templates) is selected.
+   - The letter is personalized by replacing `[NAME]` with the birthday person's name.
+
+4. **Sending Email**:
+   - The script connects to Gmail's SMTP server using `smtplib` and sends a personalized birthday email to the person using their email address from the CSV file.
+
+### Workflow:
+1. The script loads the birthday data from `birthdays.csv`.
+2. It checks if today's date matches any birthday.
+3. If it matches, a random letter template is selected, personalized with the name, and sent to the person’s email.
+
+### Outcome:
+- This system automates the process of sending personalized birthday emails, making it easier to wish people on their special day.
+
+
 ## Day 33: [Kanye Quote Generator](code/day-33)
 
 ### Description
