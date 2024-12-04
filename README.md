@@ -1,8 +1,21 @@
-# 100-days-of-code
+# 100-Days-of-Code: Portfolio Projects
 
-# Portfolio Projects
+This section highlights the projects and code worked on during the **100 Days of Code** challenge.
 
-This section highlights the projects and code worked on during the 100 days of coding challenge.
+---
+
+| **Project Title**                      | **Technologies Used** | **Key Features**                                                                                         | **Outcome**                                                                                   | **Workflow**                                           |
+|----------------------------------------|-----------------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| [Pomodoro Timer](code/day-28)          | Tkinter               | Countdown timer with work/break sessions                                                                  | Efficient time management using Pomodoro.                                                       | Timer logic, Tkinter UI, Start/Reset functionality.    |
+| [Password Manager](code/day-29-30)     | Tkinter, JSON         | Strong password generation and secure storage                                                            | Secure password management with search functionality.                                          | Password gen, store in JSON, Tkinter UI, Search.      |
+| [Flashcard Game](code/day-31)          | Tkinter, Pandas       | Korean vocabulary flashcards with automatic flip feature                                                  | Interactive flashcard game for vocabulary learning.                                            | Design flashcards, use Pandas, track answers.         |
+| [Birthday Email System](code/day-32)   | CSV, smtplib          | Automated birthday emails from CSV data                                                                    | Sends personalized birthday emails.                                                            | Parse CSV, email gen, date matching.                 |
+| [Kanye Quote Generator](code/day-33)   | Tkinter, Kanye API    | Displays random Kanye quotes with a button for new quotes                                                  | Fun quote generator with API integration.                                                     | API connection, Tkinter UI, random quote display.     |
+| [Quiz Application](code/day-34-35)     | Tkinter, Python       | Multiple-choice quiz with score tracking                                                                  | Interactive quiz with score tracking.                                                           | Question structure, Tkinter UI, score tracking.       |
+| [Stock Price Notifier](code/day-36)    | Alpha Vantage, Twilio | Tracks stock prices and sends SMS alerts for significant changes                                           | Real-time stock price alerts with news.                                                        | Fetch stock data, price change detection, SMS alerts. |
+| [Water Intake Tracker](code/day-37)    | Pixela API            | Tracks daily water intake and visualizes progress                                                          | Visual progress tracking for hydration.                                                       | Connect Pixela, log data, display graph.             |
+| [Exercise Tracker](code/day-38)        | Nutritionix API       | Logs exercise details and syncs with Google Sheets                                                         | Tracks and logs workouts efficiently.                                                          | Fetch exercise data, Google Sheets integration.       |
+| [Flight Price Alert](code/day-39-40)   | Flight API, Twilio    | Tracks flight prices and sends SMS alerts when prices drop                                                | Notifies users of flight price drops.                                                          | Track flight prices, Google Sheets, SMS alerts.       |
 
 ## Day 28: [Pomodoro Timer](code/day-28)
 
